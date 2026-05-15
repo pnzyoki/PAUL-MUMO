@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paul Mumo Nzyoki | Developer Portfolio</title>
+  <meta name="description"
+    content="Paul Mumo Nzyoki - Full-Stack Developer specializing in React, TypeScript, and management systems for education and finance. Based in Kenya." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">PMN<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="mailto:p.mumo01@gmail.com" class="btn-hire">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-greeting">Hello, It's Me</div>
+      <h1 class="hero-name">Paul Mumo<br /><span class="accent">Nzyoki</span></h1>
+      <p class="hero-role">
+        <span class="typing-prefix">And I'm a </span>
+        <span class="typed" id="typed-text"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-desc">Fullstack developer and data science learner based in Nairobi, Kenya. I build
+        community-centred digital products that solve real problems in African contexts, with a background in
+        Mathematics and Computer Science.</p>
+
+      <div class="hero-social">
+        <a href="https://github.com/pnzyoki" target="_blank" rel="noopener" class="social-icon">🐙</a>
+        <a href="https://www.linkedin.com/in/paul-mumo-223430363" target="_blank" rel="noopener"
+          class="social-icon">🔗</a>
+        <a href="mailto:p.mumo01@gmail.com" class="social-icon">✉️</a>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-scroll">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="portrait-frame">
+        <div class="blob-bg"></div>
+        <img src="assets/paul_premium.png" alt="Paul Mumo Nzyoki" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-label">01 / About</div>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-layout">
+        <div class="about-portrait">
+          <div class="geometric-ring"></div>
+          <img src="assets/paul_premium.png" alt="Paul Mumo Nzyoki" />
+        </div>
+        <div class="about-text">
+          <h3 class="about-subtitle">Developer & Tech Professional!</h3>
+          <p>I'm <strong>Paul Mumo Nzyoki</strong> - a fullstack developer, data science learner, and tech professional
+            based in Nairobi, Kenya. I build community-centred digital products that solve real problems in African
+            contexts, with a background in Mathematics and Computer Science.</p>
+          <p>I specialize in <strong>management systems</strong> - crafting tools that help institutions and groups
+            manage members, finances, and data efficiently. From Sacco platforms to portfolio sites, I build with
+            purpose.</p>
+          <p>Currently learning <strong>Data Analytics and Data Science</strong>, along with TypeScript on ICP, Flask,
+            and Django, while exploring blockchain technology and cyber security.</p>
+          <a href="#contact" class="btn-primary mt-4">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="section-inner">
+      <div class="section-label">02 / What I Do</div>
+      <h2 class="section-title">What I Do</h2>
+      <div class="bento-grid">
+        <div class="bento-card bento-large fade-up">
+          <div class="bento-icon">&lt;/&gt;</div>
+          <h3>Fullstack Development</h3>
+          <p>Building scalable, community-centred web applications using React, Vite, and Supabase to solve real
+            problems in African contexts.</p>
+        </div>
+        <div class="bento-card fade-up">
+          <div class="bento-icon">📊</div>
+          <h3>Data Science & Analytics</h3>
+          <p>Applying mathematical and analytical skills to derive insights from data and build intelligent systems.</p>
+        </div>
+        <div class="bento-card fade-up">
+          <div class="bento-icon">🔗</div>
+          <h3>Blockchain</h3>
+          <p>Exploring decentralized applications on the Internet Computer Protocol (ICP) with TypeScript.</p>
+        </div>
+        <div class="bento-card fade-up">
+          <div class="bento-icon">🛡️</div>
+          <h3>Cyber Security</h3>
+          <p>Security-conscious development practices with a growing interest in cybersecurity research and solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="section-label">03 / Skills</div>
+      <h2 class="section-title">Tech Stack & Expertise</h2>
+      <div class="skills-icon-grid">
+        <div class="skill-tile fade-up" data-tooltip="React">
+          <span class="skill-emoji">⚛️</span>
+          <span class="skill-label">React</span>
+        </div>
+        <div class="skill-tile fade-up" data-tooltip="JavaScript">
+          <span class="skill-emoji">⚡</span>
+          <span class="skill-label">JavaScript</span>
+        </div>
+        <div class="skill-tile fade-up" data-tooltip="TypeScript">
+          <span class="skill-emoji">🔷</span>
+          <span class="skill-label">TypeScript</span>
+        </div>
+        <div class="skill-tile fade-up" data-tooltip="HTML & CSS">
+          <span class="skill-emoji">🌐</span>
+          <span class="skill-label">HTML & CSS</span>
+        </div>
+        <div class="skill-tile fade-up" data-tooltip="Python">
+          <span class="skill-emoji">🐍</span>
+          <span class="skill-label">Python</span>
+        </div>
+        <div class="skill-tile fade-up" data-tooltip="Data Science">
+          <span class="skill-emoji">📈</span>
+          <span class="skill-label">Data Science</span>
+        </div>
+        <div class="skill-tile fade-up" data-tooltip="Data Analytics">
+          <span class="skill-emoji">📊</span>
+          <span class="skill-label">Data Analytics</span>
+        </div>
+        <div class="skill-tile fade-up" data-tooltip="Supabase">
+          <span class="skill-emoji">🔥</span>
+          <span class="skill-label">Supabase</span>
+        </div>
+        <div class="skill-tile fade-up" data-tooltip="Flask / Django">
+          <span class="skill-emoji">🌶️</span>
+          <span class="skill-label">Flask/Django</span>
+        </div>
+        <div class="skill-tile fade-up" data-tooltip="Git & GitHub">
+          <span class="skill-emoji">🐙</span>
+          <span class="skill-label">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-label">04 / Projects</div>
+      <h2 class="section-title">Featured Work</h2>
+      <div class="projects-bento">
+
+        <div class="project-card project-featured fade-up">
+          <div class="project-card-bg" style="background-image: url('assets/chama_hive.png');"></div>
+          <div class="project-content-overlay">
+            <div class="project-tag">Featured</div>
+            <div class="project-number">01</div>
+            <h3 class="project-title">Chama Hive</h3>
+            <p class="project-desc">A modern Sacco & Chama management system for Kenyan investment groups. Features
+              dashboard with fund allocation charts, contribution tracking with Excel/CSV upload, loan management with
+              auto interest accrual, member roles, dark mode, and M-Pesa integration (coming soon).</p>
+            <div class="project-tech">
+              <span>React 18</span><span>Vite 5</span><span>Supabase</span><span>Recharts</span>
+            </div>
+            <div class="project-links">
+              <a href="https://chama-hive.vercel.app" target="_blank" rel="noopener" class="proj-link live">↗ Live
+                Demo</a>
+              <a href="https://github.com/pnzyoki/Chama-Hive" target="_blank" rel="noopener" class="proj-link github">⌥
+                GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up">
+          <div class="project-card-bg" style="background-image: url('assets/art_2_0.png');"></div>
+          <div class="project-content-overlay">
+            <div class="project-number">02</div>
+            <h3 class="project-title">ART 2.0</h3>
+            <p class="project-desc">A creative JavaScript project exploring interactive art, visual interfaces, and
+              dynamic DOM manipulation - rebuilt with modern design patterns.</p>
+            <div class="project-tech">
+              <span>JavaScript</span><span>HTML</span><span>CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://art-2-0.vercel.app/" target="_blank" rel="noopener" class="proj-link live">↗ Live
+                Demo</a>
+              <a href="https://github.com/pnzyoki/ART-2.0" target="_blank" rel="noopener" class="proj-link github">⌥
+                GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up">
+          <div class="project-card-bg" style="background-image: url('assets/art.png');"></div>
+          <div class="project-content-overlay">
+            <div class="project-number">03</div>
+            <h3 class="project-title">ART</h3>
+            <p class="project-desc">The original interactive art project demonstrating UI creativity, canvas animations,
+              and front-end experimentation.</p>
+            <div class="project-tech">
+              <span>JavaScript</span><span>HTML</span><span>CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://pnzyoki.github.io/ART/" target="_blank" rel="noopener" class="proj-link live">↗ Live
+                Demo</a>
+              <a href="https://github.com/pnzyoki/ART" target="_blank" rel="noopener" class="proj-link github">⌥
+                GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up">
+          <div class="project-card-bg" style="background-image: url('assets/portfolio.png');"></div>
+          <div class="project-content-overlay">
+            <div class="project-number">04</div>
+            <h3 class="project-title">Portfolio</h3>
+            <p class="project-desc">This portfolio site - a hand-coded, premium dark-themed developer portfolio with
+              particle animations, Bento layouts, and smooth interactions.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/pnzyoki/PAUL-MUMO" target="_blank" rel="noopener" class="proj-link github">⌥
+                GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="projects-more">
+        <a href="https://github.com/pnzyoki" target="_blank" rel="noopener" class="btn-outline">View All on GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="section-label">05 / Contact</div>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact-intro">Have a project in mind or looking for a developer? I'd love to hear from you.</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:p.mumo01@gmail.com" class="contact-value">p.mumo01@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🔗</span>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/paul-mumo-223430363" target="_blank" rel="noopener"
+                class="contact-value">Paul Mumo</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🐙</span>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/pnzyoki" target="_blank" rel="noopener"
+                class="contact-value">github.com/pnzyoki</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Kenya 🇰🇪</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required autocomplete="off" />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required autocomplete="off" />
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width" id="submit-btn">Send Message ✦</button>
+          <p class="form-success" id="form-success">✅ Message sent! I'll get back to you soon.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <p class="footer-logo">PMN<span class="dot">.</span></p>
+      <p class="footer-copy">© 2026 Paul Mumo Nzyoki.</p>
+      <div class="footer-links">
+        <a href="https://github.com/pnzyoki" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/paul-mumo-223430363" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:p.mumo01@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
