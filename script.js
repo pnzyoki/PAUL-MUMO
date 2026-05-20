@@ -125,8 +125,8 @@ type();
 
 // -- Intersection Observer: fade-up --
 const observerOptions = {
-  threshold: 0.08,
-  rootMargin: '0px 0px -20px 0px'
+  threshold: 0.05,
+  rootMargin: '0px 0px 0px 0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -138,18 +138,32 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
+// Manual check: reveal anything already in (or near) the viewport
+function revealVisible() {
+  document.querySelectorAll('.fade-up').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight + 60 && rect.bottom > 0) {
+      el.classList.add('visible');
+    }
+  });
+}
+
 // Observe all potential animated elements
 function initAnimations() {
   const elements = document.querySelectorAll(
     '.fade-up, .project-card, .skill-tile, .bento-card, .about-layout, section .section-inner'
   );
-  
   elements.forEach(el => {
-    // Ensure they have the base class
     if (!el.classList.contains('fade-up')) el.classList.add('fade-up');
     observer.observe(el);
   });
+  // Also immediately reveal anything already visible
+  revealVisible();
 }
+
+// Re-check on scroll and resize (catches cards that don't trigger the observer)
+window.addEventListener('scroll', revealVisible, { passive: true });
+window.addEventListener('resize', revealVisible, { passive: true });
 
 // Run on load
 document.addEventListener('DOMContentLoaded', initAnimations);
